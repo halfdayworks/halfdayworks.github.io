@@ -281,9 +281,10 @@ table {
       .site-nav .page-link {
         color: #fff;
         display: block;
-        padding: 5px 10px;
+        padding: 5px 10px 5px 40px;
         position: relative;
-        top: 70px; }
+        top: 70px;
+        text-align: left; }
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
 
@@ -532,6 +533,34 @@ table {
   overflow: hidden;
   text-align: center; }
 
+.aboutsection {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: left; }
+
+.aboutdesc {
+  padding: 0 2vw 0 2vw;
+  font-size: 12px; }
+
+.img-tet {
+  font-size: 7vw;
+  font-weight: 700;
+  color: #fff; }
+
+.bottom-left {
+  position: absolute;
+  bottom: 7px;
+  left: 0px; }
+
+.top-left {
+  position: absolute;
+  top: 7px;
+  left: 0px; }
+
 .hero-left {
   text-align: right;
   padding-right: 7px;
@@ -559,7 +588,8 @@ table {
 .about-right {
   font-size: 5vw;
   font-weight: 700;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  position: relative; }
 
 .title {
   font-size: 5vw;
@@ -672,6 +702,14 @@ a:hover {
   .desc {
     padding: 1vw 5vw 1vw 5vw;
     text-align: center; }
+
+  .aboutdesc {
+    font-size: 15px; }
+
+  .img-tet {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #fff; }
 
   .card {
     max-width: 50%;
