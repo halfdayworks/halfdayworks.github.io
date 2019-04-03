@@ -82,184 +82,171 @@
   <meta name="msapplication-TileImage" content="/favicons/favicon-144.png">
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-
-<script>
-function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-43645289-3', 'auto');
-  ga('send', 'pageview');
-</script>
-  
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-43645289-3', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Quicksand" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script>
+    function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-43645289-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-43645289-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
 </head>
-  <body><header class="site-header" role="banner"><div class="leftside"><nav class="site-nav">
-          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-          <label for="nav-trigger">
-            <span class="menu-icon">
-              <svg viewBox="0 0 18 15" width="18px" height="15px">
-                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-              </svg>
-            </span>
-          </label>
+  <body id="body" class="scrollSnap">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-          <div class="trigger">
-            <label for="nav-trigger">
-              <span class="close-icon">
-                <svg viewBox="0 0 18 15" width="18px" height="15px">
-                  <line x1="0" y1="12" 
-                        x2="12" y2="0" 
-                        stroke="white" 
-                        stroke-width="2"/>
-                  <line x1="0" y1="0" 
-                        x2="12" y2="12" 
-                        stroke="white" 
-                        stroke-width="2"/>
-                </svg>
-              </span>
-            </label><a class="page-link" href="/">Home</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/work/">Work</a><a class="page-link" href="/contact/">Contact</a></div>
-        </nav><a class="logo-sun" rel="author" href="/">
-        <svg width="24.002px" height="59.527px" enable-background="new 45.668 11.736 24.002 59.527" version="1.1" viewBox="45.668 11.736 24.002 59.527" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-          <path d="m51.667 35.91c-0.119 0-0.238-0.021-0.355-0.064-0.527-0.196-0.799-0.783-0.603-1.313 0.791-2.136 2.765-3.43 5.026-3.295 2.101 0.125 3.759 1.464 4.226 3.412 0.132 0.549-0.206 1.1-0.755 1.231-0.547 0.133-1.102-0.206-1.23-0.755-0.308-1.278-1.42-1.792-2.36-1.849-1.021-0.056-2.416 0.418-2.989 1.965-0.155 0.413-0.546 0.668-0.96 0.668z"/>
-          <path d="m66.837 57.795c-5.068 0-9.229-3.336-10.146-8.336-0.101-0.555 0.268-1.087 0.822-1.189 0.553-0.102 1.086 0.267 1.188 0.821 0.799 4.354 4.701 7.126 9.273 6.595 0.557-0.064 1.067 0.336 1.133 0.896 0.064 0.562-0.336 1.067-0.896 1.133-0.464 0.055-0.922 0.08-1.374 0.08z"/>
-        </svg>
-      </a>
-    </div>
-
-    <div class="rightside">
-      <a class="logo-words" rel="author" href="/">
-        <svg width="101.22px" height="59.527px" enable-background="new 0 11.736 101.225 59.527" version="1.1" viewBox="0 11.736 101.225 59.527" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-          <path d="m7.336 34.871v-14.189c0-0.745 0.577-1.323 1.322-1.323s1.346 0.578 1.346 1.323v5.771h6.229v-5.771c0-0.745 0.578-1.323 1.323-1.323 0.747 0 1.347 0.578 1.347 1.323v14.188c0 0.746-0.6 1.322-1.347 1.322-0.745 0-1.323-0.577-1.323-1.322v-5.771h-6.229v5.771c0 0.746-0.601 1.322-1.346 1.322s-1.322-0.576-1.322-1.321z"/>
-          <path d="m34.293 30.205v4.713c0 0.698-0.578 1.274-1.276 1.274-0.625 0-1.105-0.457-1.25-1.033-0.915 0.648-1.996 1.033-3.198 1.033-1.636 0-3.054-0.673-4.088-1.755-1.036-1.106-1.637-2.597-1.637-4.232 0-1.659 0.601-3.149 1.637-4.232 1.034-1.107 2.452-1.804 4.088-1.804 1.202 0 2.283 0.408 3.198 1.058 0.145-0.602 0.625-1.058 1.25-1.058 0.698 0 1.276 0.577 1.276 1.298v4.738zm-2.55 0c0-1.01-0.36-1.875-0.937-2.477-0.577-0.649-1.395-0.985-2.236-0.985-0.867 0-1.683 0.336-2.237 0.985-0.577 0.602-0.913 1.467-0.913 2.477 0 0.987 0.336 1.852 0.913 2.477 0.554 0.602 1.37 0.938 2.237 0.938 0.841 0 1.659-0.336 2.236-0.938 0.577-0.625 0.937-1.49 0.937-2.477z"/>
-          <path d="m40.833 19.359c0.745 0 1.347 0.601 1.347 1.323v14.188c0 0.721-0.602 1.322-1.347 1.322-0.721 0-1.322-0.601-1.322-1.322v-14.188c-1e-3 -0.722 0.6-1.323 1.322-1.323z"/>
-          <path d="m49.272 23.375v0.337h0.723c0.721 0 1.32 0.577 1.32 1.322 0 0.722-0.6 1.323-1.32 1.323h-0.723v8.489c0 0.722-0.577 1.323-1.322 1.323-0.746 0-1.324-0.601-1.324-1.323v-8.489h-0.625c-0.745 0-1.346-0.601-1.346-1.323 0-0.745 0.601-1.322 1.346-1.322h0.625v-0.337c0-0.89 0.097-1.659 0.458-2.356 0.336-0.721 1.009-1.274 1.73-1.492 0.481-0.143 0.938-0.191 1.442-0.191 0.722 0 1.322 0.601 1.322 1.322 0 0.746-0.602 1.347-1.322 1.347-0.313 0-0.529 0.023-0.625 0.072-0.096 0.024-0.119 0.048-0.145 0.072-0.023 0-0.214 0.337-0.214 1.226z"/>
-          <path d="m64.687 34.895c0 0.697-0.576 1.298-1.297 1.298-0.649 0-1.154-0.457-1.274-1.033-0.914 0.625-2.068 1.033-3.271 1.033-3.247 0-5.844-2.742-5.844-5.988 0-3.295 2.597-6.036 5.844-6.036 1.179 0 2.332 0.385 3.223 1.009v-4.521c0-0.698 0.577-1.299 1.323-1.299 0.721 0 1.297 0.601 1.297 1.299v9.523 0.024 4.691zm-5.843-8.104c-0.865 0-1.658 0.36-2.26 0.986-0.603 0.6-0.963 1.466-0.963 2.428 0 0.914 0.36 1.779 0.963 2.381 0.602 0.625 1.395 0.986 2.26 0.986 0.89 0 1.658-0.361 2.26-0.986 0.604-0.602 0.963-1.467 0.963-2.381 0-0.962-0.359-1.828-0.963-2.428-0.602-0.626-1.371-0.986-2.26-0.986z"/>
-          <path d="m79.836 30.205v4.713c0 0.698-0.576 1.274-1.274 1.274-0.625 0-1.104-0.457-1.25-1.033-0.914 0.648-1.997 1.033-3.199 1.033-1.635 0-3.054-0.673-4.088-1.755-1.032-1.106-1.635-2.597-1.635-4.232 0-1.659 0.603-3.149 1.635-4.232 1.034-1.107 2.453-1.804 4.088-1.804 1.202 0 2.285 0.408 3.199 1.058 0.146-0.602 0.625-1.058 1.25-1.058 0.698 0 1.274 0.577 1.274 1.298v4.738zm-2.548 0c0-1.01-0.361-1.875-0.938-2.477-0.578-0.649-1.396-0.985-2.238-0.985-0.863 0-1.683 0.336-2.236 0.985-0.576 0.602-0.914 1.467-0.914 2.477 0 0.987 0.338 1.852 0.914 2.477 0.555 0.602 1.373 0.938 2.236 0.938 0.842 0 1.66-0.336 2.238-0.938 0.576-0.625 0.938-1.49 0.938-2.477z"/>
-          <path d="m94.358 25.443v9.091c0 3.223-2.548 5.748-5.746 5.748-0.865 0-1.755-0.241-2.476-0.602-0.675-0.289-0.914-1.034-0.626-1.707 0.313-0.577 1.13-0.842 1.707-0.529 0.457 0.217 0.912 0.338 1.395 0.338 1.419-0.025 2.621-0.939 3.008-2.189-0.675 0.385-1.492 0.578-2.287 0.578-2.765 0-5.023-2.285-5.023-5.05v-5.676c0-0.721 0.602-1.274 1.25-1.274 0.745 0 1.275 0.553 1.275 1.274v5.676c0 1.395 1.129 2.453 2.498 2.453 1.373 0 2.479-1.058 2.479-2.453v-5.676c0-0.721 0.529-1.274 1.251-1.274 0.697-2e-3 1.295 0.551 1.295 1.272z"/>
-          <path d="m29.509 50.211l-5.892 14.02c-0.023 0.072-0.071 0.17-0.121 0.218l-0.024 0.024c-0.024 0.047-0.071 0.096-0.12 0.144 0 0.049-0.023 0.049-0.023 0.071-0.048 0.025-0.122 0.072-0.17 0.121h-0.023c-0.072 0.049-0.12 0.121-0.215 0.146h-0.025s-0.024 0-0.024 0.022c-0.048 0-0.12 0.025-0.192 0.049h-0.048c-0.073 0.023-0.145 0.023-0.24 0.023-0.073 0-0.146 0-0.218-0.023h-0.072c-0.072-0.022-0.122-0.049-0.168-0.049-0.024-0.022-0.024-0.022-0.048-0.022-0.096-0.022-0.167-0.097-0.217-0.146h-0.024c-0.072-0.049-0.12-0.096-0.169-0.121-0.022-0.022-0.022-0.022-0.046-0.071-0.025-0.048-0.074-0.097-0.098-0.144-0.048 0-0.048-0.024-0.048-0.024-0.048-0.048-0.072-0.146-0.095-0.218l-3.15-7.453-3.151 7.453c-0.024 0.072-0.071 0.17-0.095 0.218-0.024 0-0.024 0.024-0.024 0.024-0.048 0.047-0.096 0.096-0.144 0.144 0 0.049-0.024 0.049-0.024 0.071-0.048 0.025-0.097 0.072-0.145 0.121h-0.048c-0.072 0.049-0.145 0.121-0.192 0.146h-0.023s-0.024 0-0.024 0.022c-0.097 0-0.144 0.025-0.193 0.049h-0.072c-0.073 0.023-0.144 0.023-0.216 0.023s-0.168 0-0.24-0.023h-0.073c-0.072-0.022-0.12-0.049-0.168-0.049-0.024-0.022-0.024-0.022-0.048-0.022-0.072-0.022-0.168-0.097-0.217-0.146h-0.023c-0.072-0.049-0.095-0.096-0.168-0.121-0.024-0.022-0.024-0.022-0.048-0.071-0.048-0.048-0.072-0.097-0.12-0.144v-0.024c-0.048-0.048-0.072-0.146-0.12-0.218l-5.916-14.02c-0.265-0.648 0.024-1.443 0.722-1.707 0.649-0.289 1.443 0.023 1.707 0.697l4.714 11.135 3.103-7.383c0.215-0.529 0.721-0.818 1.25-0.818 0.504 0 1.01 0.289 1.25 0.818l3.103 7.383 4.688-11.135c0.289-0.674 1.058-0.986 1.757-0.697 0.644 0.264 0.956 1.059 0.668 1.707z"/>
-          <path d="m33.114 63.293c-1.034-1.059-1.66-2.549-1.66-4.232 0-1.635 0.626-3.053 1.66-4.207 1.082-1.131 2.477-1.828 4.136-1.828 1.587 0 3.03 0.697 4.015 1.828 1.084 1.154 1.685 2.572 1.685 4.207 0 1.685-0.601 3.174-1.685 4.232-0.985 1.131-2.428 1.828-4.015 1.828-1.659 0-3.054-0.697-4.136-1.828zm0.963-4.232c0 1.035 0.312 1.877 0.866 2.551 0.601 0.576 1.394 0.89 2.308 0.89 0.842 0 1.61-0.313 2.212-0.89 0.602-0.674 0.938-1.516 0.938-2.551 0-0.983-0.336-1.852-0.938-2.5-0.602-0.528-1.37-0.914-2.212-0.914-0.914 0-1.707 0.386-2.308 0.914-0.554 0.648-0.866 1.515-0.866 2.5z"/>
-          <path d="m53.963 54.299c0 0.674-0.555 1.275-1.274 1.275-0.554 0-1.033 0.145-1.442 0.457-0.457 0.289-0.816 0.697-1.104 1.154-0.578 0.77-0.866 1.684-0.986 2.02v4.568c0 0.699-0.601 1.274-1.324 1.274-0.696 0-1.274-0.575-1.274-1.274v-9.476c0-0.696 0.578-1.25 1.274-1.25 0.723 0 1.324 0.554 1.324 1.25v0.17c0.144-0.17 0.337-0.36 0.505-0.481 0.795-0.527 1.827-0.961 3.029-0.938 0.718 1e-3 1.272 0.554 1.272 1.251z"/>
-          <path d="m57.113 63.727v-14.188c0-0.723 0.577-1.324 1.322-1.324s1.347 0.602 1.347 1.324v8.32l4.93-4.93c0.506-0.507 1.373-0.507 1.875 0 0.529 0.528 0.529 1.368 0 1.875l-3.604 3.606 3.703 4.446c0.456 0.578 0.385 1.42-0.192 1.877-0.24 0.218-0.554 0.313-0.843 0.313-0.385 0-0.769-0.168-1.01-0.479l-3.536-4.279-1.32 1.322v2.115c0 0.721-0.603 1.321-1.348 1.321s-1.324-0.599-1.324-1.319z"/>
-          <path d="m70 61.611c0.436-0.578 1.274-0.65 1.806-0.193 0.626 0.529 1.708 1.082 2.646 1.059 0.648 0 1.25-0.217 1.635-0.457 0.336-0.289 0.433-0.528 0.433-0.723 0-0.119-0.022-0.168-0.071-0.24-0.023-0.072-0.121-0.168-0.313-0.289-0.336-0.24-1.059-0.504-1.924-0.672h-0.023c-0.746-0.145-1.467-0.338-2.093-0.627-0.648-0.313-1.228-0.744-1.658-1.393-0.265-0.434-0.409-0.963-0.409-1.516 0-1.105 0.624-2.045 1.419-2.646 0.843-0.576 1.853-0.889 2.957-0.889 1.66 0 2.839 0.795 3.606 1.322 0.578 0.385 0.746 1.178 0.385 1.778-0.385 0.578-1.178 0.746-1.777 0.338-0.771-0.506-1.443-0.891-2.214-0.891-0.602 0-1.13 0.192-1.44 0.434-0.313 0.216-0.385 0.433-0.385 0.554 0 0.096 0 0.119 0.047 0.19 0.023 0.049 0.097 0.146 0.265 0.24 0.313 0.217 0.938 0.434 1.755 0.577l0.023 0.023h0.023c0.794 0.145 1.54 0.361 2.238 0.697 0.648 0.289 1.299 0.746 1.706 1.42 0.288 0.48 0.456 1.033 0.456 1.586 0 1.18-0.647 2.166-1.514 2.789-0.865 0.602-1.949 0.963-3.125 0.963-1.877-0.023-3.32-0.891-4.281-1.66-0.531-0.428-0.604-1.246-0.173-1.774z"/>
-        </svg>
-      </a>
-    </div>
-  
-
-
-
-</header>
-
-<main class="" aria-label="Content">
-      <div class="">
-        <div><div class="card">
-      	<a href="/2018/11/03/shree-krishna-dairy-and-sweets.html">
-            <div class="card-image">
-              <div class="work-show section">
-                <img src="/assets/img/shree-krishna-dairy/skds-packaging-small-halfday-works.jpg" data-src="/assets/img/shree-krishna-dairy/skds-packaging-1280-800-halfday-works.jpg" class="showimage lazyload blur-up" alt="shree-krishna-dairy-packaging-halfday-works"/>
-                <noscript>
-                  <img src="/assets/img/shree-krishna-dairy/skds-packaging-1280-800-halfday-works.jpg" />
-                </noscript>
-              </div>
-            </div>
-
-            <div class="card-text">
-                <div class="work-words section" style="background-color:#a39aff;">
-                  <p class="card-title">
-                    <a href="/2018/11/03/shree-krishna-dairy-and-sweets.html">
-                      Shree Krishna Dairy and Sweets
-                    </a>
-                  </p>
-                </div>
-            </div>
-        </a>
-  	  </div><div class="card">
-      	<a href="/2018/11/02/k-mart.html">
-            <div class="card-image">
-              <div class="work-show section">
-                <img src="/assets/img/kmart/kmart-logo-small-halfday-works.jpg" data-src="/assets/img/kmart/kmart-logo-1280-800-halfday-works.jpg" class="showimage lazyload blur-up" alt="kaustubh-mart-logo-halfday-works"/>
-                <noscript>
-                  <img src="/assets/img/kmart/kmart-logo-1280-800-halfday-works.jpg" />
-                </noscript>
-              </div>
-            </div>
-
-            <div class="card-text">
-                <div class="work-words section" style="background-color:#f7b8c7;">
-                  <p class="card-title">
-                    <a href="/2018/11/02/k-mart.html">
-                      Kaustubh Mart
-                    </a>
-                  </p>
-                </div>
-            </div>
-        </a>
-  	  </div><div class="card">
-      	<a href="/2018/11/01/cafe-coffee-hutt.html">
-            <div class="card-image">
-              <div class="work-show section">
-                <img src="/assets/img/cch/cch-flyer-1-small-halfday-works.jpg" data-src="/assets/img/cch/cch-flyer-1-1280-800-halfday-works.jpg" class="showimage lazyload blur-up" alt="cch-flyer-halfday-works"/>
-                <noscript>
-                  <img src="/assets/img/cch/cch-flyer-1-1280-800-halfday-works.jpg" />
-                </noscript>
-              </div>
-            </div>
-
-            <div class="card-text">
-                <div class="work-words section" style="background-color:#D4AF37;">
-                  <p class="card-title">
-                    <a href="/2018/11/01/cafe-coffee-hutt.html">
-                      Cafe Coffee Hutt
-                    </a>
-                  </p>
-                </div>
-            </div>
-        </a>
-  	  </div></div>
-
-    
-
+  <a class="page-link" href="/" onclick="closeNav()">Home</a>
+  <a class="page-link" href="/#about" onclick="closeNav()">About </a> 
+  <a class="page-link" href="/#brandStrategy" onclick="closeNav()">Services</a> 
+  <a class="page-link" href="/work" onclick="closeNav()">Work</a>
+  <a class="page-link" href="/contact" onclick="closeNav()">Contact</a>
+</div><main class="" aria-label="Content">
+      <div class="menubtn" onclick="openNav()">&#9776;</div>
+      <div>
+  <svg id="candyOne" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+    <g id="svgCandy">
+      <path fill="#FFFFFF" stroke="#ffffff" stroke-miterlimit="10" d="M199,100c0,53.774-43.802,97.362-97.831,97.362S21.082,185.485,3.339,100C-11.515,28.432,47.14,2.637,101.169,2.637C181.943,2.637,199,35.952,199,100z"/>
+    </g>
+    <defs>
+      <clipPath id="svgPath">
+        <path fill="#FFFFFF" stroke="#ffffff" stroke-miterlimit="10" d="M199,100c0,53.774-43.802,97.362-97.831,97.362S21.082,185.485,3.339,100C-11.515,28.432,47.14,2.637,101.169,2.637C181.943,2.637,199,35.952,199,100z"/>
+      </clipPath>
+    </defs>
+  </svg>
+  <div id="opener" type="submit" onclick="readmore()">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56px" height="56px" viewBox="0 0 56 56" enable-background="new 0 0 56 56" xml:space="preserve">
+      <g>
+        <circle id="btnPath" cx="28" cy="28" r="25" stroke="#ffffff" stroke-width="2" fill="#ffffff" />
+        <polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points=" 25,18 35,28 25,38"/>
+      </g>
+    </svg>
+  </div>
+  <div id="scroller">
+    <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.994px" height="67.911px" viewBox="0 0 22.994 67.911" enable-background="new 0 0 22.994 67.911" xml:space="preserve">
+      <g>
+        <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="0.707,22.707 11.497,33.497 22.287,22.707 "/>
+        <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="0.707,33.707 11.497,44.497 22.287,33.707 "/>
+        <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="0.707,44.708 11.497,55.497 22.287,44.708 "/>
+        <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="0.707,55.708 11.497,66.497 22.287,55.708 "/>
+      </g>
+    </svg>
+  </div><div class="section" style="background-color:#a39aff;">
+  <div id="title">
+    Shree Krishna Dairy and Sweets
+  </div>
+  <div id="tag" class="tag">
+    English and Devnagari
+  </div>
+  <div id="details">
+      <div id="" class="bgimg">
+        <img src="/assets/img/shree-krishna-dairy/skds-packaging-small-halfday-works.jpg" data-src="/assets/img/shree-krishna-dairy/skds-packaging-1280-800-halfday-works.jpg" class="showimage lazyload blur-up" alt="shree-krishna-dairy-packaging-halfday-works"/>
+        <noscript>
+          <img src="/assets/img/shree-krishna-dairy/skds-packaging-1280-800-halfday-works.jpg" />
+        </noscript>
       </div>
-    </main><footer class="site-footer">
-  <div class="whole">
-    
-    <div class="leftside">
-      <div class="social-wrap" style="background-image: url(/assets/img/halfday-works-smile.svg); background-position:right; background-repeat:no-repeat;">  
-  <ul id="social-ico" class="social-media-list"><li><a href="tel:917350812100">
-      <img src="/assets/icons/phone.svg"/></a></li><li><a href="mailto:hello@halfdayworks.com">
-      <img src="/assets/icons/email.svg"/></a></li><li><a href="https://www.facebook.com/halfdayworks">
-      <img src="/assets/icons/facebook.svg"/></a></li><li><a href="https://instagram.com/halfdayworks">
-      <img src="/assets/icons/instagram.svg"/></a></li><li><a href="https://www.twitter.com/halfdayworks">
-    <img src="/assets/icons/twitter.svg"/></a></li></ul>
-</div>
-    </div>
+    <p>Shree Krishna Dairy and Sweets is a famous name in its city. It is a premier dairy and traditional Indian sweets producer serving locals since 1999. It aspires to become a brand now and is preparing itself for a larger market. And so, they wanted to update their identity to recent times and wanted a logo that makes them unique and recognisable, that is proud of its heritage and keep to its roots.</p>
 
-    <div class="rightside stayhappy">
-      <a class="logo-words" rel="author" href="/">
-        <svg width="82.475px" height="59.527px" enable-background="new 0 11.736 82.475 59.527" version="1.1" viewBox="0 11.736 82.475 59.527" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-          <g fill="#231F20">
-            <path d="m5.971 31.939c0.391-0.477 1.108-0.543 1.585-0.152 0.956 0.782 2.607 1.694 4.149 1.673 1.086 0 2.063-0.327 2.715-0.805 0.651-0.478 0.934-1.021 0.934-1.563 0-0.283-0.064-0.478-0.196-0.695-0.13-0.217-0.325-0.435-0.651-0.652-0.629-0.413-1.694-0.782-2.976-1.021h-0.043c-1.021-0.195-1.977-0.456-2.802-0.847-0.826-0.391-1.542-0.933-2.02-1.694-0.326-0.521-0.5-1.129-0.5-1.781 0-1.303 0.739-2.432 1.738-3.17 1.021-0.739 2.346-1.151 3.757-1.151 2.085 0 3.628 1.02 4.735 1.738 0.499 0.347 0.652 1.042 0.304 1.541-0.326 0.521-1.021 0.673-1.542 0.326-1.107-0.737-2.171-1.39-3.497-1.39-0.977 0-1.846 0.305-2.433 0.739-0.586 0.435-0.825 0.911-0.825 1.368 0 0.261 0.043 0.435 0.152 0.608 0.108 0.174 0.304 0.37 0.586 0.565 0.564 0.391 1.542 0.738 2.715 0.956h0.044c1.108 0.217 2.128 0.5 2.997 0.912 0.891 0.435 1.672 0.999 2.172 1.802 0.326 0.521 0.521 1.174 0.521 1.847 0 1.39-0.782 2.584-1.867 3.366-1.065 0.782-2.477 1.238-4.019 1.238-2.346-0.022-4.322-1.194-5.561-2.172-0.476-0.391-0.541-1.107-0.172-1.586z"/>
-            <path d="m25.476 26.054c0 0.651-0.565 1.194-1.216 1.194h-0.543v6.06c0.674 0 1.195 0.543 1.195 1.216 0 0.674-0.521 1.195-1.195 1.195-1.325 0-2.411-1.087-2.411-2.412v-6.06h-0.63c-0.672 0-1.194-0.542-1.194-1.194 0-0.673 0.521-1.195 1.194-1.195h0.63v-3.148c0-0.673 0.543-1.194 1.216-1.194s1.194 0.521 1.194 1.194v3.149h0.543c0.652 0 1.217 0.522 1.217 1.195z"/>
-            <path d="m37.813 30.311v4.257c0 0.63-0.521 1.152-1.152 1.152-0.564 0-0.998-0.413-1.129-0.935-0.825 0.586-1.802 0.935-2.889 0.935-1.477 0-2.759-0.608-3.692-1.586-0.934-0.999-1.477-2.346-1.477-3.823 0-1.499 0.543-2.844 1.477-3.822 0.933-0.999 2.215-1.629 3.692-1.629 1.086 0 2.064 0.369 2.889 0.956 0.131-0.543 0.565-0.956 1.129-0.956 0.63 0 1.152 0.521 1.152 1.172v4.279zm-2.303 0c0-0.912-0.326-1.693-0.848-2.236-0.521-0.587-1.258-0.891-2.02-0.891-0.782 0-1.52 0.304-2.019 0.891-0.521 0.543-0.827 1.325-0.827 2.236 0 0.891 0.305 1.673 0.827 2.237 0.499 0.543 1.237 0.847 2.019 0.847 0.761 0 1.499-0.304 2.02-0.847 0.522-0.564 0.848-1.346 0.848-2.237z"/>
-            <path d="m50.931 26.011v8.209c0 2.911-2.304 5.191-5.19 5.191-0.782 0-1.586-0.217-2.238-0.542-0.607-0.261-0.825-0.935-0.563-1.543 0.282-0.521 1.02-0.759 1.541-0.477 0.413 0.195 0.826 0.304 1.261 0.304 1.281-0.021 2.367-0.847 2.715-1.977-0.608 0.348-1.347 0.521-2.063 0.521-2.498 0-4.54-2.063-4.54-4.562v-5.125c0-0.652 0.543-1.151 1.13-1.151 0.674 0 1.15 0.5 1.15 1.151v5.126c0 1.26 1.021 2.215 2.26 2.215s2.235-0.955 2.235-2.215v-5.126c0-0.652 0.479-1.151 1.131-1.151 0.628 0 1.171 0.5 1.171 1.152z"/>
-            <path d="m6.449 60.589v-12.816c0-0.674 0.521-1.194 1.194-1.194s1.216 0.521 1.216 1.194v5.213h5.625v-5.213c0-0.674 0.521-1.194 1.194-1.194 0.674 0 1.216 0.521 1.216 1.194v12.814c0 0.673-0.542 1.194-1.216 1.194-0.673 0-1.194-0.521-1.194-1.194v-5.213h-5.625v5.213c0 0.673-0.543 1.194-1.216 1.194-0.673 2e-3 -1.194-0.519-1.194-1.192z"/>
-            <path d="m30.797 56.375v4.257c0 0.63-0.521 1.151-1.151 1.151-0.565 0-1-0.412-1.129-0.934-0.826 0.586-1.803 0.934-2.889 0.934-1.477 0-2.758-0.608-3.692-1.585-0.934-0.999-1.477-2.347-1.477-3.823 0-1.498 0.542-2.846 1.477-3.822 0.935-0.998 2.215-1.63 3.692-1.63 1.086 0 2.063 0.37 2.889 0.956 0.129-0.543 0.564-0.956 1.129-0.956 0.629 0 1.151 0.521 1.151 1.175v4.277zm-2.302 0c0-0.912-0.326-1.693-0.847-2.236-0.521-0.587-1.261-0.892-2.021-0.892-0.782 0-1.521 0.305-2.02 0.892-0.521 0.543-0.825 1.324-0.825 2.236 0 0.891 0.303 1.672 0.825 2.238 0.5 0.542 1.238 0.847 2.02 0.847 0.76 0 1.499-0.305 2.021-0.847 0.521-0.566 0.847-1.347 0.847-2.238z"/>
-            <path d="m35.055 64.693v-8.297-0.021-4.3c0-0.632 0.521-1.152 1.151-1.152 0.608 0 1.108 0.413 1.195 0.892 0.803-0.521 1.846-0.892 2.954-0.892 2.888 0 5.254 2.478 5.254 5.452 0 2.977-2.366 5.387-5.254 5.387-1.087 0-2.13-0.326-2.912-0.891v3.822c0 0.608-0.542 1.173-1.237 1.173-0.63 0-1.151-0.563-1.151-1.173zm2.388-8.318c0 0.848 0.283 1.672 0.848 2.172 0.542 0.608 1.26 0.913 2.064 0.913 0.737 0 1.476-0.305 2.041-0.913 0.5-0.5 0.848-1.324 0.848-2.172s-0.348-1.629-0.848-2.193c-0.564-0.586-1.303-0.891-2.041-0.891-0.804 0-1.521 0.305-2.064 0.891-0.565 0.564-0.848 1.345-0.848 2.193z"/>
-            <path d="m49.39 64.693v-8.297-0.021-4.3c0-0.632 0.521-1.152 1.149-1.152 0.607 0 1.107 0.413 1.195 0.892 0.803-0.521 1.846-0.892 2.953-0.892 2.889 0 5.255 2.478 5.255 5.452 0 2.977-2.366 5.387-5.255 5.387-1.087 0-2.129-0.326-2.911-0.891v3.822c0 0.608-0.543 1.173-1.237 1.173-0.628 0-1.149-0.563-1.149-1.173zm2.388-8.318c0 0.848 0.283 1.672 0.848 2.172 0.543 0.608 1.261 0.913 2.063 0.913 0.737 0 1.478-0.305 2.041-0.913 0.5-0.5 0.849-1.324 0.849-2.172s-0.349-1.629-0.849-2.193c-0.563-0.586-1.304-0.891-2.041-0.891-0.804 0-1.521 0.305-2.063 0.891-0.565 0.564-0.848 1.345-0.848 2.193z"/>
-            <path d="m71.37 52.075v8.21c0 2.91-2.302 5.189-5.189 5.189-0.781 0-1.586-0.218-2.237-0.543-0.606-0.261-0.825-0.934-0.565-1.541 0.283-0.521 1.021-0.761 1.543-0.479 0.412 0.196 0.826 0.306 1.261 0.306 1.28-0.021 2.366-0.848 2.715-1.978-0.608 0.348-1.349 0.521-2.063 0.521-2.498 0-4.539-2.064-4.539-4.561v-5.126c0-0.652 0.543-1.152 1.129-1.152 0.675 0 1.15 0.5 1.15 1.152v5.126c0 1.26 1.021 2.215 2.26 2.215 1.237 0 2.237-0.955 2.237-2.215v-5.126c0-0.652 0.478-1.152 1.13-1.152 0.625 2e-3 1.168 0.502 1.168 1.154z"/>
-            <path d="m75.476 58.7c0.892 0 1.63 0.737 1.63 1.628 0 0.892-0.738 1.607-1.63 1.607-0.89 0-1.606-0.717-1.606-1.607s0.716-1.628 1.606-1.628z"/>
-          </g>
-        </svg>  
-      </a>
+
+    <div id="seeMore">
+    <a href="/2018/11/03/shree-krishna-dairy-and-sweets.html">See more</a>
+  </div>
+  </div>
+</div><div class="section" style="background-color:#f7b8c7;">
+  <div id="title">
+    Kaustubh Mart
+  </div>
+  <div id="tag" class="tag">
+    Mystic. Lotus Inspired.
+  </div>
+  <div id="details">
+      <div id="" class="bgimg">
+        <img src="/assets/img/kmart/kmart-logo-small-halfday-works.jpg" data-src="/assets/img/kmart/kmart-logo-1280-800-halfday-works.jpg" class="showimage lazyload blur-up" alt="kaustubh-mart-logo-halfday-works"/>
+        <noscript>
+          <img src="/assets/img/kmart/kmart-logo-1280-800-halfday-works.jpg" />
+        </noscript>
+      </div>
+    <p>Kaustubh Mart was a perfect assignment for us since it had to be started from scratch. While the entreprenuer client had a few guidelines for us, we were given the liberty to be our creative self. Initially, the new venture was to be named Kaustubh Super Bazaar - with "Kaustubh" being the name of one of their family members. But after surveys and discussions, it was finalised to be Kaustubh Mart.</p>
+
+
+    <div id="seeMore">
+    <a href="/2018/11/02/k-mart.html">See more</a>
+  </div>
+  </div>
+</div><div class="section" style="background-color:#D4AF37;">
+  <div id="title">
+    Cafe Coffee Hutt
+  </div>
+  <div id="tag" class="tag">
+    Playful. Inviting. Comfortable.
+  </div>
+  <div id="details">
+      <div id="" class="bgimg">
+        <img src="/assets/img/cch/cch-flyer-1-small-halfday-works.jpg" data-src="/assets/img/cch/cch-flyer-1-1280-800-halfday-works.jpg" class="showimage lazyload blur-up" alt="cch-flyer-halfday-works"/>
+        <noscript>
+          <img src="/assets/img/cch/cch-flyer-1-1280-800-halfday-works.jpg" />
+        </noscript>
+      </div>
+    <p>Cafe Coffee Hutt is an up and coming local favorite coffee house and fastfood joint. They recently moved to a larger location with better infrastructure and more seating capacity. This new space is designed to be a perfect hangout place for both young and old.</p>
+
+
+    <div id="seeMore">
+    <a href="/2018/11/01/cafe-coffee-hutt.html">See more</a>
+  </div>
+  </div>
+</div></div>
+
+
+
+    </main>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <a class="page-link" href="/" onclick="closeNav()">Home</a>
+  <a class="page-link" href="/#about" onclick="closeNav()">About </a> 
+  <a class="page-link" href="/#brandStrategy" onclick="closeNav()">Services</a> 
+  <a class="page-link" href="/work" onclick="closeNav()">Work</a>
+  <a class="page-link" href="/contact" onclick="closeNav()">Contact</a>
+</div><footer class="site-footer">
+<div id="footer" class="section">
+    <div id="title">
+      Links
+    </div>
+    <div id="tagOne" class="tag">
+      Let's<br/>work<br/>together!
+    </div>
+    <div id="details">
+      <div id="subtitle">Menu</div>
+        
+      <a href="/" onclick="readmore()">Home</a> | 
+      <a href="/#about" onclick="readmore()">About </a> | 
+      <a href="/#brandStrategy" onclick="readmore()">Services</a> | 
+      <a href="/work" onclick="readmore()">Work</a> | 
+      <a href="/contact" onclick="readmore()">Contact</a>
+      <br/><br/>
+      <div id="subtitle">Social</div>
+      <p>  
+<ul class="social-media-list"><li><a href="tel:917350812100">
+      <img class="socialIcon" src="/assets/icons/phone.svg"/>
+    </a></li><li><a href="mailto:hello@halfdayworks.com">
+      <img class="socialIcon" src="/assets/icons/email.svg"/>
+    </a></li><li><a href="https://www.facebook.com/halfdayworks">
+      <img class="socialIcon" src="/assets/icons/facebook.svg"/>
+    </a></li><li><a href="https://instagram.com/halfdayworks">
+      <img class="socialIcon" src="/assets/icons/instagram.svg"/>
+    </a></li><li><a href="https://www.twitter.com/halfdayworks">
+      <img class="socialIcon" src="/assets/icons/twitter.svg"/>
+    </a></li></ul>
+</p>  
+      
     </div>
   </div>
+
 </footer></body>
   <script src="/assets/js/lazysizes.min.js" async=""></script>
+  <script src="/assets/js/main.js"></script>
 </html>
