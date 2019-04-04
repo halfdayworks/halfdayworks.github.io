@@ -10,7 +10,23 @@ var interval = setInterval(function() {
 
 */
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
+   if (location.pathname === "/" || location.pathname === "/work/" || location.pathname === "/contact/") {
+        document.getElementsByTagName("body")[0].setAttribute("class", "scrollSnap");     
+    } else {
+        document.getElementsByTagName("body")[0].setAttribute("class", "noScrollSnap"); 
+    }
+    if (location.pathname === "/") {
+        if (document.body.scrollTop === 0) {
+            document.getElementById("opener").style.display = "none";
+        } else {
+            document.getElementById("opener").style.display = "flex";
+        }
+    }
+}, false);
+
+
+/*window.onload = function() {
     if (location.pathname === "/" || location.pathname === "/work/" || location.pathname === "/contact/") {
         document.getElementsByTagName("body")[0].setAttribute("class", "scrollSnap");     
     } else {
@@ -24,7 +40,7 @@ window.onload = function() {
         }
     }
 };
-
+*/
 
 
 var isHeaderOpen = false,
@@ -80,15 +96,15 @@ function readmore() {
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
     
-    if (location.pathname === "/") {
-        if (winH > currentScrollPos) {
-            document.getElementById("opener").style.display = "none";
-          } else {
-            document.getElementById("opener").style.display = "flex";
-          }
-      } else {
-        document.getElementById("opener").style.display = "flex";
-      }    
+    //if (location.pathname === "/") {
+    //    if (winH > currentScrollPos) {
+    //        document.getElementById("opener").style.display = "none";
+    //      } else {
+    //       document.getElementById("opener").style.display = "flex";
+    //      }
+    //  } else {
+    //    document.getElementById("opener").style.display = "flex";
+    //  }    
     
   
   if (currentScrollPos > endPage) {
