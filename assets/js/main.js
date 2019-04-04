@@ -96,15 +96,15 @@ function readmore() {
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
     
-    //if (location.pathname === "/") {
-    //    if (winH > currentScrollPos) {
-    //        document.getElementById("opener").style.display = "none";
-    //      } else {
-    //       document.getElementById("opener").style.display = "flex";
-    //      }
-    //  } else {
-    //    document.getElementById("opener").style.display = "flex";
-    //  }    
+    if (location.pathname === "/") {
+        if (winH > currentScrollPos) {
+            document.getElementById("opener").style.display = "none";
+          } else {
+           document.getElementById("opener").style.display = "flex";
+          }
+    } else {
+        document.getElementById("opener").style.display = "flex";
+    }    
     
   
   if (currentScrollPos > endPage) {
