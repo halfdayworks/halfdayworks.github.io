@@ -10,7 +10,10 @@ var interval = setInterval(function() {
 
 */
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
+   
    if (location.pathname === "/" || location.pathname === "/work/" || location.pathname === "/contact/") {
         document.getElementsByTagName("body")[0].setAttribute("class", "scrollSnap");     
     } else {
@@ -23,24 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("opener").style.display = "flex";
         }
     }
-}, false);
 
 
-/*window.onload = function() {
-    if (location.pathname === "/" || location.pathname === "/work/" || location.pathname === "/contact/") {
-        document.getElementsByTagName("body")[0].setAttribute("class", "scrollSnap");     
-    } else {
-        document.getElementsByTagName("body")[0].setAttribute("class", "noScrollSnap"); 
-    }
-    if (location.pathname === "/") {
-        if (document.body.scrollTop === 0) {
-            document.getElementById("opener").style.display = "none";
-        } else {
-            document.getElementById("opener").style.display = "flex";
-        }
-    }
-};
-*/
+
+
+
+
 
 
 var isHeaderOpen = false,
@@ -129,3 +120,5 @@ function closeNav() {
 }
 
 //createTimelines();
+
+}, false);
