@@ -1,1 +1,1 @@
-Sitemap: http://halfdayworks.com/sitemap.xml
+Sitemap: https://halfdayworks.com/sitemap.xml
