@@ -48,7 +48,7 @@ $( document ).ready(function() {
     });
 
   } else {
-    $('.l-viewport').css({'height':'auto', 'overflow-y': 'scroll', 'touch-action':'pan-y'});
+    $('.l-viewport').css({'height':'auto', 'overflow-y': 'scroll', 'touch-action':'pan-y !important'});
   }
 
 
@@ -93,16 +93,18 @@ $( document ).ready(function() {
 
   });
 
+
   // swipe support for touch devices
   var targetElement = document.getElementById('viewport'),
       mc = new Hammer(targetElement);
   mc.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
   mc.on('swipeup swipedown', function(e) {
-
-    updateHelper(e);
-
+  
+      updateHelper(e);
+  
   });
 
+  
   $(document).keyup(function(e){
 
     if (!($('.outer-nav').hasClass('is-vis'))) {
