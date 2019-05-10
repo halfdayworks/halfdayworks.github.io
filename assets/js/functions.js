@@ -14,6 +14,7 @@ $( document ).ready(function() {
     updateContent(curPos, nextPos, lastItem);
   }
 
+
   // DOMMouseScroll included for firefox support
   var canScroll = true,
       scrollController = null,
@@ -47,7 +48,7 @@ $( document ).ready(function() {
     });
 
   } else {
-    $('.l-viewport').css('height', 'auto');
+    $('.l-viewport').css({'height':'auto', 'overflow-y': 'scroll', 'touch-action':'pan-y'});
   }
 
 
