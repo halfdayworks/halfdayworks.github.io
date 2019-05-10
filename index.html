@@ -80,7 +80,7 @@
   <link rel="icon" type="image/png" href="/favicons/favicon_16x16.png" sizes="16x16">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/favicons/favicon-144.png">
-  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Quicksand" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -96,369 +96,372 @@
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
 </head>
-  <body id="body" class="">
+  <body>
     <div class="loader-body" id="loader">
       <div class="loader"></div>
     </div>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <a class="page-link" href="/" onclick="closeNav()">Home</a>
-  <a class="page-link" href="/#about" onclick="closeNav()">About </a> 
-  <a class="page-link" href="/#brandStrategy" onclick="closeNav()">Services</a> 
-  <a class="page-link" href="/work" onclick="closeNav()">Work</a>
-  <a class="page-link" href="/contact" onclick="closeNav()">Contact</a>
-</div><main class="" aria-label="Content">
-      <div class="menubtn" onclick="openNav()">&#9776;</div>
-      <div id="frontpage">
-  <svg id="candyOne" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-      <g id="svgCandy">
-        <path fill="#FFFFFF" stroke="#ffffff" stroke-miterlimit="10" d="M199,100c0,53.774-43.802,97.362-97.831,97.362S21.082,185.485,3.339,100C-11.515,28.432,47.14,2.637,101.169,2.637C181.943,2.637,199,35.952,199,100z"/>
-      </g>
-      <defs>
-        <clipPath id="svgPath">
-          <path fill="#FFFFFF" stroke="#ffffff" stroke-miterlimit="10" d="M199,100c0,53.774-43.802,97.362-97.831,97.362S21.082,185.485,3.339,100C-11.515,28.432,47.14,2.637,101.169,2.637C181.943,2.637,199,35.952,199,100z"/>
-        </clipPath>
-      </defs>
-    </svg>
-    <div id="opener" type="submit" onclick="readmore()">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56px" height="56px" viewBox="0 0 56 56" enable-background="new 0 0 56 56" xml:space="preserve">
-        <g>
-          <circle id="btnPath" cx="28" cy="28" r="25" stroke="#ffffff" stroke-width="2" fill="#ffffff" />
-          <polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points=" 25,18 35,28 25,38"/>
-        </g>
-      </svg>
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+      <a class="device-notification--logo" href="/">
+        <img src="/assets/img/halfday-works-logo.svg" alt="Halfday Works">
+      </a>
+      <p class="device-notification--message">We request you to orient your device to portrait or find a larger screen. You won't be disappointed.</p>
     </div>
+
+    <div class="perspective effect-rotate-left">
+      <div class="container"><div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+          <div class="l-wrapper">
+            <header class="header padded">
+              <a class="header--logo" href="/">
+                <img src="/assets/img/halfday-works-logo.svg" width="110px" alt="Halfday Works">
+              </a>
+              <!--<button class="header--cta cta">Hire Us</button>-->
+              <div class="header--nav-toggle">
+                <span></span>
+              </div>
+            </header>
+            
+            <nav class="l-side-nav">
+  <ul class="side-nav">
+    <li class="is-active"><span>Home</span></li>
+    <li><span>About</span></li>
+    <li><span>Services</span></li>
+    <li><span>Works</span></li>
+    <li><span>Contact</span></li>
+    <li><span>Hire us</span></li>
+  </ul>
+</nav>
     
-
-  <div id="first" class="section">
-    <div id="logoCover">
-      <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 100" enable-background="new 0 0 200 100" xml:space="preserve">
-        <g>
-          <g>
-            <path fill="none" stroke="#000000" stroke-width="3.7833" stroke-linecap="round" stroke-miterlimit="10" d="M3,37.677c2.349-6.375,11.265-5.874,12.673,0"/>
-            <path fill="none" stroke="#000000" stroke-width="3.7833" stroke-linecap="round" stroke-miterlimit="10" d="M13.472,62.643c1.534,8.411,9.004,13.948,18.031,12.898"/>
-          </g>
-          <text transform="matrix(1 0 0 1 42.6475 39.9414)" font-family="'Quicksand'" font-weight="700" font-size="41.7489">Halfday</text>
-          <text transform="matrix(1 0 0 1 42.6475 90.0391)" font-family="'Quicksand'" font-weight="700" font-size="41.7489">Works</text>
-        </g>
-      </svg>
-    </div>
-    <div id="titleOne">
-      Brand<br/>Consultancy<br/>& Design Services
-    </div>
-    <div id="tagOne" class="tag">
-      We<br/>create<br/>brands.
-    </div>
-    <div id="scroller">
-      <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.994px" height="67.911px" viewBox="0 0 22.994 67.911" enable-background="new 0 0 22.994 67.911" xml:space="preserve">
-        <g>
-          <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="0.707,22.707 11.497,33.497 22.287,22.707 "/>
-          <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="0.707,33.707 11.497,44.497 22.287,33.707 "/>
-          <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="0.707,44.708 11.497,55.497 22.287,44.708 "/>
-          <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="0.707,55.708 11.497,66.497 22.287,55.708 "/>
-        </g>
-      </svg>
-    </div>
-  </div>
-  
-  <div id="about" class="section">
-    <div id="title">
-      Know<br/>about us
-    </div>
-    <div id="tag" class="tag">
-      Who<br/>Where<br/>What/Why
-    </div>
-    <div id="details">
-      <div class="leftColumn">
-      <p>We are an independent brand consultancy and design services firm based in Pune, India.</p>
-      <p>We work on 
-        <li>Brand Strategy</li>
-        <li>Graphics and Identity</li>
-        <li>Displays and Exhibitions</li>
-      </div>
-      <div class="rightColumn">
-        <li>Products and Packaging</li>
-        <li>Websites and Digital Experiences</li>
-        <li>Advertising and Communications</li> <br/>to create unique, lasting impressions that resonate and reinstate your brand.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="brandStrategy" class="section">
-    <div id="title">
-      Brand<br/>Strategy
-    </div>
-    <div id="tag" class="tag">
-      Grasping<br/>the client's<br/>client
-    </div>
-    <div id="details">
-      <div class="leftColumn">
-      <p>Understanding the aspirations and inclinations of our client’s client is probably what helps us  the most to make your brand which is cherished and adhered.</p>
-      <ul>
-        <li>Market Research</li>
-        <li>Competitor Analysis</li>
-        <li>SWOT Analysis</li>
-      </ul>
-      </div>
-      <div class="rightColumn">
-      <p>We undertake multiple studies to define your needs and then create a strategy that positions your brand in the best possible way.</p>
-      <ul>
-        <li>Brand Strategy</li>
-        <li>Messaging & Positioning</li>
-      </ul>
-      </div>
-    </div>
-    <div id="bsimg" class="bgimg">
-      <img src="/assets/img/web/small/brand-strategy-halfday-works.png" data-src="/assets/img/web/brand-strategy-halfday-works.png" class="bgimage lazyload blur-up"  alt="brand-strategy-halfday-works"/>
-      <noscript>
-        <img src="/assets/img/web/brand-strategy-halfday-works.png" />
-      </noscript>
-    </div>
-  </div>
-
-  <div id="identityGraphics" class="section">
-    <div id="title">
-      Identity<br/>& Graphics
-    </div>
-    <div id="tag" class="tag">
-      Making<br/>every pixel<br/>count
-    </div>
-    <div id="details">
-      <div class="leftColumn">
-      <p>An identity is what your brand would be if it were a person. And every pixel on the design should help in creating that identity.</p>
-      <p>Whether designing a new logo or a tagline for your brand, we take care of your every need making it easier for you to launch.</p>
-      </div>
-      <div class="rightColumn">
-      <ul>
-        <li>Logo design</li>
-        <li>Naming & Copy</li>
-        <li>Business cards</li>
-        <li>Brochures</li>
-        <li>Pamphlets</li>
-        <li>Email templates</li>
-        <li>Catalogs</li>
-      </ul>
-      </div>
-    </div>
-    <div id="igimg" class="bgimg">
-      <img src="/assets/img/web/small/identity-graphics-halfday-works.png" data-src="/assets/img/web/identity-graphics-halfday-works.png" class="bgimage lazyload blur-up"  alt="identity-graphics-halfday-works"/>
-      <noscript>
-        <img src="/assets/img/web/identity-graphics-halfday-works.png" />
-      </noscript>
-    </div>
-  </div>
-
-  <div id="displaysExhibitions" class="section">
-    <div id="title">
-      Displays<br/>& Exhibitions
-    </div>
-    <div id="tag" class="tag">
-      Spaces that<br/>connect
-    </div>
-    <div id="details">
-      <div class="leftColumn">
-      <p>Show the best of your brand where it matters the most and let the setting help you in a face to face conversation that converts a walk-in into a client.</p>
-      <p>We design spaces of all shapes and sizes that incorporate the identity of your brand to create a fitting surrounding.</p>
-      </div>
-      <div class="rightColumn">
-      <ul>
-        <li>Stores & Offices</li>
-        <li>Booths & Stalls</li>
-        <li>Displays & Merchandising</li>
-        <li>Hoardings & Banners</li>
-        <li>Lightboxes & Signs</li>
-      </ul>
-      </div>  
-    </div>
-    <div id="deimg" class="bgimg">
-      <img src="/assets/img/web/small/displays-exhibitions-halfday-works.png" data-src="/assets/img/web/displays-exhibitions-halfday-works.png" class="bgimage lazyload blur-up"  alt="displays-exhibitions-halfday-works"/>
-      <noscript>
-        <img src="/assets/img/web/displays-exhibitions-halfday-works.png" />
-      </noscript>
-    </div>
-  </div>
-
-  <div id="productsPackaging" class="section">
-    <div id="title">
-      Products<br/>& Packaging
-    </div>
-    <div id="tag" class="tag">
-      Products<br/>that speak
-    </div>
-    <div id="details">
-      <div class="leftColumn">
-      <p>Packaging is an extension of a product’s identity. It speaks the language of perception.</p>
-      <p>We understand that a package design needs to balance being bold enough to stand out in a crowd and subtle enough to be liked in a personal space.</p>
-      </div>
-      <div class="rightColumn">
-      <ul>
-        <li>Product packaging</li>
-        <li>Package design</li>
-        <li>Storage design</li>
-        <li>Inserts</li>
-      </ul>
-      </div>
-    </div>
-    <div id="ppimg" class="bgimg">
-      <img src="/assets/img/web/small/products-packaging-halfday-works.png" data-src="/assets/img/web/products-packaging-halfday-works.png" class="bgimage lazyload blur-up"  alt="products-packaging-halfday-works"/>
-      <noscript>
-        <img src="/assets/img/web/products-packaging-halfday-works.png" />
-      </noscript>
-    </div>
-  </div>
-
-  <div id="websitesDigital" class="section">
-    <div id="title">
-      Websites &<br/>Digital Experiences
-    </div>
-    <div id="tag" class="tag">
-      Engaging<br/>interactive
-    </div>
-    <div id="details">
-      <div class="leftColumn">
-      <p>Sure Google can find you but do your customers like you even more once they have visited your website?</p>
-      <p>We create digital experiences that excite customers and make them fall in love with you, increasing your brand awareness and loyalty.</p>
-      </div>
-      <div class="rightColumn">
-      <ul>
-        <li>Websites</li>
-        <li>Apps</li>
-        <li>UI/UX design</li>
-        <li>Social media</li>
-        <li>Presentations</li>
-      </ul>
-      </div>
-    </div>
-    <div id="wdimg" class="bgimg">
-      <img src="/assets/img/web/small/websites-digital-halfday-works.png" data-src="/assets/img/web/websites-digital-halfday-works.png" class="bgimage lazyload blur-up"  alt="websites-digital-halfday-works"/>
-      <noscript>
-        <img src="/assets/img/web/websites-digital-halfday-works.png" />
-      </noscript>
-    </div>
-  </div>
-
-  <div id="advertisingCommunications" class="section">
-    <div id="title">
-      Advertising<br/>& Communications
-    </div>
-    <div id="tag" class="tag">
-      Branding<br/>on repeat
-    </div>
-    <div id="details">
-      <div class="leftColumn">
-      <p>“Advertise or die” is one of the truest statements and continuous ads is as essential as production itself. But making an impact with limited resources is what’s more important.</p>
-      <p>We make visual advertisements and communications for online and offline medium that leave a mark on the viewer’s mind.</p>
-      </div>
-      <div class="rightColumn">
-      <ul>
-        <li>Print</li>
-        <li>Radio</li>
-        <li>Video</li>
-        <li>Social media</li>
-        <li>Motion graphics</li>
-        <li>Environmental graphics</li>
-      </ul>
-      </div>
-    </div>
-    <div id="acimg" class="bgimg">
-      <img src="/assets/img/web/small/peacock-png8.png" data-src="/assets/img/web/peacock-png24.png" class="bgimage lazyload blur-up" alt="advertising-communications-halfday-works"/>
-      <noscript>
-        <img src="/assets/img/web/peacock-png24.png" />
-      </noscript>
-    </div>
-  </div>
-
-  <div id="portfolio" class="section">
-    <div id="title">
-      Portfolio
-    </div>
-    <div id="tag" class="tag">
-      See<br/>our work
-    </div>
-    <div id="details">
-      <div id="seeMore">
-        <a href="/work/">See more</a>
-      </div><div class="portfolioimg">
-          <img src="/assets/img/shree-krishna-dairy/skds-packaging-small-halfday-works.jpg" data-src="/assets/img/shree-krishna-dairy/skds-packaging-1280-800-halfday-works.jpg" class="showimage lazyload blur-up" alt="shree-krishna-dairy-packaging-halfday-works"/>
-          <noscript>
-            <img src="/assets/img/shree-krishna-dairy/skds-packaging-1280-800-halfday-works.jpg" />
-          </noscript>
-        </div><div class="portfolioimg">
-          <img src="/assets/img/kmart/kmart-logo-small-halfday-works.jpg" data-src="/assets/img/kmart/kmart-logo-1280-800-halfday-works.jpg" class="showimage lazyload blur-up" alt="kaustubh-mart-logo-halfday-works"/>
-          <noscript>
-            <img src="/assets/img/kmart/kmart-logo-1280-800-halfday-works.jpg" />
-          </noscript>
-        </div></div>
-    
-  </div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </main>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <a class="page-link" href="/" onclick="closeNav()">Home</a>
-  <a class="page-link" href="/#about" onclick="closeNav()">About </a> 
-  <a class="page-link" href="/#brandStrategy" onclick="closeNav()">Services</a> 
-  <a class="page-link" href="/work" onclick="closeNav()">Work</a>
-  <a class="page-link" href="/contact" onclick="closeNav()">Contact</a>
-</div><footer class="site-footer">
-<div id="footer" class="section">
-    <div id="title">
-      Links
-    </div>
-    <div id="tagOne" class="tag">
-      Let's<br/>work<br/>together!
-    </div>
-    <div id="details">
-      <div id="subtitle">Menu</div>
+<ul class="l-main-content main-content">
+  <li class="l-section section section--is-active" id="intro">
+    <div class="intro padded">
+      <div class="intro--banner">
+        <h1>Brand<br>Consultancy<br>&amp; Design Services</h1>
         
-      <a href="/" onclick="readmore()">Home</a> | 
-      <a href="/#about" onclick="readmore()">About </a> | 
-      <a href="/#brandStrategy" onclick="readmore()">Services</a> | 
-      <a href="/work" onclick="readmore()">Work</a> | 
-      <a href="/contact" onclick="readmore()">Contact</a>
-      <br/><br/>
-      <div id="subtitle">Social</div>
-      <p>  
-<ul class="social-media-list"><li><a href="tel:917350812100">
-      <img class="socialIcon" src="/assets/icons/phone.svg"/>
-    </a></li><li><a href="mailto:hello@halfdayworks.com">
-      <img class="socialIcon" src="/assets/icons/email.svg"/>
-    </a></li><li><a href="https://www.facebook.com/halfdayworks">
-      <img class="socialIcon" src="/assets/icons/facebook.svg"/>
-    </a></li><li><a href="https://instagram.com/halfdayworks">
-      <img class="socialIcon" src="/assets/icons/instagram.svg"/>
-    </a></li><li><a href="https://www.twitter.com/halfdayworks">
-      <img class="socialIcon" src="/assets/icons/twitter.svg"/>
-    </a></li></ul>
-</p>  
+        <img src="assets/img/we-create-brands.svg" alt="We create brands">
+
+      </div>
       
     </div>
-  </div>
+  </li>
+  <li class="l-section section" id="about">
+    <div class="about padded">
+      <div class="about--lockup">
+        <h2><span>About Us</span></h2>
+        <div class="modal">
+          <div class="modal--information">
+            <p>We are an independent brand consultancy and design services firm based in Pune, India.</p>
+            <p>With services ranging from ideation stages to execution and analytics, we create unique, lasting impressions that resonate and reinstate your brand.
+            </p>
+            <p>Swipe down to find out more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="l-section section" id="services">
+    <div class="services padded">
+      <h2>Services</h2>
+      <div class="services--lockup">
+        <ul class="servslider padded">
+          <li class="servslider--item">
+            <a href="/services/#navigated/2/4/5">
+              <div class="servslider--item-image ">
+                <img src="assets/img/about/websites-digital-experiences-300-halfday-works.jpg" alt="websites and digital experiences">
+              </div>
+              <p class="servslider--item-title">Websites &amp;<br/>Digital Experiences</p>
+              <p class="servslider--item-description">Engaging<br/>interactive</p>
+            </a>
+          </li>
+          <li class="servslider--item servslider--item-left">
+            <a href="/services/#navigated/2/5/5">
+              <div class="servslider--item-image">
+                <img src="assets/img/about/communications-300-halfday-works.jpg" alt="communications">
+              </div>
+              <p class="servslider--item-title">Advertising<br/>&amp; Communications</p>
+              <p class="servslider--item-description">Branding<br/>on repeat</p>
+            </a>
+          </li>
+          <li class="servslider--item servslider--item-center">
+            <a href="/services/#navigated/2/0/5">
+              <div class="servslider--item-image">
+                <img src="assets/img/about/brand-strategy-300-halfday-works.jpg" alt="brand strategy">
+              </div>
+              <p class="servslider--item-title">Brand<br/>Strategy</p>
+              <p class="servslider--item-description">Grasping the<br/>client's client</p>
+            </a>
+          </li>
+          <li class="servslider--item servslider--item-right">
+            <a href="/services/#navigated/2/1/5">
+              <div class="servslider--item-image">
+                <img src="assets/img/about/identity-graphics-300-halfday-works.jpg" alt="identity and graphics">
+              </div>
+              <p class="servslider--item-title">Identity<br/>&amp; Graphics</p>
+              <p class="servslider--item-description">Making every<br/>pixel count</p>
+            </a>
+          </li>
+          <li class="servslider--item ">
+            <a href="/services/#navigated/2/2/5">
+              <div class="servslider--item-image">
+                <img src="assets/img/about/displays-exhibitions-300-halfday-works.jpg" alt="displays and exhibitions">
+              </div>
+              <p class="servslider--item-title">Displays<br/>&amp; Exhibitions</p>
+              <p class="servslider--item-description">Spaces that<br/>connect</p>
+            </a>
+          </li>
+          <li class="servslider--item ">
+            <a href="/services/#navigated/2/3/5">
+              <div class="servslider--item-image">
+                <img src="assets/img/about/products-packaging-300-halfday-works.jpg" alt="products and packaging">
+              </div>
+              <p class="servslider--item-title">Products<br/>&amp; Packaging</p>
+              <p class="servslider--item-description">Products<br/>that speak</p>
+            </a>
+          </li>
+        </ul>
+        <div class="servslider--prev">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+          <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+            <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+            c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+            c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+          </g>
+          </svg>
+        </div>
+        <div class="servslider--next">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+          <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+            <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+          </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="l-section section" id="work">
+    <div class="work padded">
+      <h2>Selected work</h2>
+      <div class="work--lockup">
+        <ul class="slider">
 
-</footer></body>
-  <script src="/assets/js/loader.js" async=""></script>
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/lazysizes.min.js" async=""></script>
+          <li class="slider--item slider--item-left">
+            <a href="/2019/03/05/swaroopa-sales.html">
+              <div class="slider--item-image">
+                <img src="/assets/img/swaroopa/swaroopa-sales-300-halfday-works.jpg" alt="swaroopa-sales-logo-halfday-works">
+              </div>
+              <p class="slider--item-title">Swaroopa Sales</p>
+              <p class="slider--item-description">Identity design for an architectural metal products retailer</p>
+            </a>
+          </li>
+
+          <li class="slider--item slider--item-center">
+            <a href="/2019/05/06/blessed-bites.html">
+              <div class="slider--item-image">
+                <img src="/assets/img/blessed-bites/blessed-bites-300-halfday-works.jpg" alt="blessed-bites-halfday-works">
+              </div>
+              <p class="slider--item-title">Blessed Bites</p>
+              <p class="slider--item-description">New Name, Identity and Store Design in a rebranding exercise for a restaurant startup.</p>
+            </a>
+          </li>
+
+          <li class="slider--item slider--item-right">
+            <a href="/2019/02/04/shirku-adventure.html">
+              <div class="slider--item-image">
+                <img src="/assets/img/shirku/jungle-shirku-adventures-300-halfday-works.jpg" alt="character-design-shirku-adventures-halfday-works">
+              </div>
+              <p class="slider--item-title">Shirku's Adventures</p>
+              <p class="slider--item-description">Character design, levels and gameplay graphic design for an adventure platformer mobile game.</p>
+            </a>
+          </li><li class="slider--item ">
+              <a href="/2018/11/03/shree-krishna-dairy-and-sweets.html">
+                <div class="slider--item-image">
+                  <img src="/assets/img/shree-krishna-dairy/skds-packaging-300-halfday-works.jpg" alt="shree-krishna-dairy-packaging-halfday-works">
+                </div>
+                <p class="slider--item-title">Shree Krishna Dairy and Sweets</p>
+                <p class="slider--item-description">Identity, packaging and marketing material design for an established regional milk-based food producer.</p>
+              </a>
+            </li><li class="slider--item ">
+              <a href="/2018/11/02/k-mart.html">
+                <div class="slider--item-image">
+                  <img src="/assets/img/kmart/kmart-logo-300-halfday-works.jpg" alt="kaustubh-mart-logo-halfday-works">
+                </div>
+                <p class="slider--item-title">Kaustubh Mart</p>
+                <p class="slider--item-description">Identity design and branding strategy for a newcomer in the retail space.</p>
+              </a>
+            </li><li class="slider--item ">
+              <a href="/2018/11/01/cafe-coffee-hutt.html">
+                <div class="slider--item-image">
+                  <img src="/assets/img/cch/cch-flyer-300-halfday-works.jpg" alt="cch-flyer-halfday-works">
+                </div>
+                <p class="slider--item-title">Cafe Coffee Hutt</p>
+                <p class="slider--item-description">Strategy, campaign, copy and digital content for the up and coming fastfood joint.</p>
+              </a>
+            </li></ul>
+        <div class="slider--prev">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+          <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+            <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+            c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+            c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+          </g>
+          </svg>
+        </div>
+        <div class="slider--next">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+          <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+            <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+          </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="l-section section" id="contact">
+    <div class="contact padded">
+      <div class="contact--lockup">
+        <h2><span>Contact Us</span></h2>
+        <div class="modal">
+          
+          <div class="modal--information">
+            <address>
+              Halfday Works Pvt Ltd<br/>
+              Plot 14, Sector 1<br/>
+              Indrayani Nagar, Bhosari<br/>
+              Pune 411039 INDIA
+              <a href="https://goo.gl/maps/1XyaxeyML8L2" target="_blank">Get Directions</a>
+            </address>
+            <a href="mailto:hello@halfdayworks.com">hello@halfdayworks.com</a>
+            <a href="tel:+917350812100">+91 73508 12100</a>
+          </div>
+          <div class="modal--options"><a href="tel:917350812100">
+      <img class="socialIcon" src="/assets/icons/phone.svg"/>
+    </a><a href="mailto:hello@halfdayworks.com">
+      <img class="socialIcon" src="/assets/icons/email.svg"/>
+    </a><a href="https://www.facebook.com/halfdayworks">
+      <img class="socialIcon" src="/assets/icons/facebook.svg"/>
+    </a><a href="https://instagram.com/halfdayworks">
+      <img class="socialIcon" src="/assets/icons/instagram.svg"/>
+    </a><a href="https://www.twitter.com/halfdayworks">
+      <img class="socialIcon" src="/assets/icons/twitter.svg"/>
+    </a></div>
+
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="l-section section" id="hire">
+    <div class="hire padded">
+      <h2>What do you want?</h2>
+
+      <form class="work-request" action="https://formspree.io/halfdayworks@gmail.com" method="POST">
+        <div class="work-request--options">
+          <span class="options-a">
+            <input id="opt-1" type="checkbox" value="Brand Strategy and Identity" name="Interests">
+            <label for="opt-1">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+              <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+              </g>
+              </svg>
+              Brand Strategy
+            </label>
+            <input id="opt-2" type="checkbox" value="Graphic/Motion design" name="Interests">
+            <label for="opt-2">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+              <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+              </g>
+              </svg>
+              Graphic design
+            </label>
+            <input id="opt-3" type="checkbox" value="Space design" name="Interests">
+            <label for="opt-3">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+              <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+              </g>
+              </svg>
+              Space design
+            </label>
+          </span>
+          <span class="options-b">
+            <input id="opt-4" type="checkbox" value="Packaging design" name="Interests">
+            <label for="opt-4">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+              <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+              </g>
+              </svg>
+              Packaging design
+            </label>
+            <input id="opt-5" type="checkbox" value="Websites/Apps" name="Interests">
+            <label for="opt-5">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+              <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+              </g>
+              </svg>
+              Websites/Apps
+            </label>
+            <input id="opt-6" type="checkbox" value="Advertising" name="Interests">
+            <label for="opt-6">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+              <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+              </g>
+              </svg>
+              Advertising
+            </label>
+          </span>
+        </div>
+        <div class="work-request--information">
+          <div class="information-name">
+            <input id="name" type="text" spellcheck="false" name="Name" required>
+            <label for="name">Name</label>
+          </div>
+          <div class="information-email">
+            <input id="email" type="email" spellcheck="false" name="Email" required>
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <input type="hidden" name="_next" value="/"/>
+        <input type="submit" value="Send Request">
+      </form>
+    </div>
+  </li>
+</ul>
+    
+
+  
+          
+          </div>
+          </div>
+        </div>
+        <ul class="outer-nav">
+          <li class="is-active">Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Works</li>
+          <li>Contact</li>
+          <li>Hire us</li>
+        </ul>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+    <script src="/assets/js/vendor/hammer-2.0.8.js"></script>
+    <script src="/assets/js/functions.js"></script>
+    <script src="/assets/js/lazysizes.min.js" async=""></script>
+  </body>
+  
 </html>

@@ -82,7 +82,7 @@
   <link rel="icon" type="image/png" href="/favicons/favicon_16x16.png" sizes="16x16">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/favicons/favicon-144.png">
-  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Quicksand" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -98,28 +98,47 @@
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
 </head>
-  <body id="body" class="">
+  <body>
     <div class="loader-body" id="loader">
       <div class="loader"></div>
     </div>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+      <a class="device-notification--logo" href="/">
+        <img src="/assets/img/halfday-works-logo.svg" alt="Halfday Works">
+      </a>
+      <p class="device-notification--message">We request you to orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+    </div>
 
-  <a class="page-link" href="/" onclick="closeNav()">Home</a>
-  <a class="page-link" href="/#about" onclick="closeNav()">About </a> 
-  <a class="page-link" href="/#brandStrategy" onclick="closeNav()">Services</a> 
-  <a class="page-link" href="/work" onclick="closeNav()">Work</a>
-  <a class="page-link" href="/contact" onclick="closeNav()">Contact</a>
-</div><main class="" aria-label="Content">
-      <div class="menubtn" onclick="openNav()">&#9776;</div>
-      <article class="about-left post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="perspective effect-rotate-left">
+      <div class="container"><div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+          <div class="l-wrapper">
+            <header class="header padded">
+              <a class="header--logo" href="/">
+                <img src="/assets/img/halfday-works-logo.svg" width="110px" alt="Halfday Works">
+              </a>
+              <!--<button class="header--cta cta">Hire Us</button>-->
+              <div class="header--nav-toggle">
+                <span></span>
+              </div>
+            </header>
+            
+            <article class="post h-entry padded" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Shree Krishna Dairy and Sweets</h1><h2>
-      <span itemprop="description" itemscope itemtype="http://schema.org/Person"><span class="" itemprop="description">Identity, packaging and marketing material design for an established regional milk-based food producer.</span></span>
+      <span itemprop="description" itemscope itemtype="http://schema.org/Person"><span class="description" itemprop="description">Identity, packaging and marketing material design for an established regional milk-based food producer.</span></span>
     </h2></p>
   </header>
+
+
+
   <!--<img src="/assets/img/shree-krishna-dairy/skds-packaging-small-halfday-works.jpg" data-src="/assets/img/shree-krishna-dairy/skds-packaging-1280-800-halfday-works.jpg" class="showimage lazyload blur-up" />-->
+
+
+
+
   <div class="post-content e-content" itemprop="articleBody">
     <p>Shree Krishna Dairy and Sweets is a famous name in its city. It is a premier dairy and traditional Indian sweets producer serving locals since 1999. It aspires to become a brand now and is preparing itself for a larger market. And so, they wanted to update their identity to recent times and wanted a logo that makes them unique and recognisable, that is proud of its heritage and keep to its roots.</p>
 
@@ -159,53 +178,26 @@
 </article>
 
 
+  
+          
+          </div>
+          </div>
+        </div>
+        <ul class="outer-nav">
+          <li class="is-active">Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Works</li>
+          <li>Contact</li>
+          <li>Hire us</li>
+        </ul>
+      </div>
 
-    </main>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <a class="page-link" href="/" onclick="closeNav()">Home</a>
-  <a class="page-link" href="/#about" onclick="closeNav()">About </a> 
-  <a class="page-link" href="/#brandStrategy" onclick="closeNav()">Services</a> 
-  <a class="page-link" href="/work" onclick="closeNav()">Work</a>
-  <a class="page-link" href="/contact" onclick="closeNav()">Contact</a>
-</div><footer class="site-footer">
-<div id="footer" class="section">
-    <div id="title">
-      Links
-    </div>
-    <div id="tagOne" class="tag">
-      Let's<br/>work<br/>together!
-    </div>
-    <div id="details">
-      <div id="subtitle">Menu</div>
-        
-      <a href="/" onclick="readmore()">Home</a> | 
-      <a href="/#about" onclick="readmore()">About </a> | 
-      <a href="/#brandStrategy" onclick="readmore()">Services</a> | 
-      <a href="/work" onclick="readmore()">Work</a> | 
-      <a href="/contact" onclick="readmore()">Contact</a>
-      <br/><br/>
-      <div id="subtitle">Social</div>
-      <p>  
-<ul class="social-media-list"><li><a href="tel:917350812100">
-      <img class="socialIcon" src="/assets/icons/phone.svg"/>
-    </a></li><li><a href="mailto:hello@halfdayworks.com">
-      <img class="socialIcon" src="/assets/icons/email.svg"/>
-    </a></li><li><a href="https://www.facebook.com/halfdayworks">
-      <img class="socialIcon" src="/assets/icons/facebook.svg"/>
-    </a></li><li><a href="https://instagram.com/halfdayworks">
-      <img class="socialIcon" src="/assets/icons/instagram.svg"/>
-    </a></li><li><a href="https://www.twitter.com/halfdayworks">
-      <img class="socialIcon" src="/assets/icons/twitter.svg"/>
-    </a></li></ul>
-</p>  
-      
-    </div>
-  </div>
-
-</footer></body>
-  <script src="/assets/js/loader.js" async=""></script>
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/lazysizes.min.js" async=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+    <script src="/assets/js/vendor/hammer-2.0.8.js"></script>
+    <script src="/assets/js/functions.js"></script>
+    <script src="/assets/js/lazysizes.min.js" async=""></script>
+  </body>
+  
 </html>
