@@ -98,8 +98,8 @@ $( document ).ready(function() {
   // swipe support for touch devices
   var targetElement = document.getElementById('viewport'),
       mc = new Hammer(targetElement);
-  mc.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
   if (isHome) { 
+    mc.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
     mc.on('swipeup swipedown', function(e) {
       
       updateHelper(e);
