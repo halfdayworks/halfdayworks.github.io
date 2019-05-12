@@ -627,7 +627,7 @@ body {
         fill: #fff; }
     .intro--banner img {
       position: absolute;
-      bottom: 20px;
+      bottom: 60px;
       right: 10px; }
   .intro--options {
     display: flex;
@@ -1348,16 +1348,17 @@ article {
   background-attachment: fixed; }
   .a-service .tag {
     position: absolute;
-    bottom: 15px;
-    left: 0;
+    bottom: 60px;
+    left: 10px;
     font-family: Didact Gothic;
     font-weight: 700;
     font-size: 70px;
     line-height: 0.9;
-    color: #ffffff; }
+    color: #ffffff;
+    z-index: -1; }
   @media (max-width: 767px) {
     .a-service .tag {
-      font-size: 30px; } }
+      font-size: 70px; } }
   .a-service--lockup {
     position: relative;
     display: flex;
@@ -1384,65 +1385,27 @@ article {
         .a-service--lockup h2 {
           font-size: 20px; }
         .a-service--lockup .tag {
-          font-size: 30px; } }
+          font-size: 70px; } }
     .a-service--lockup .modal {
       color: #0c0c0c;
       padding: 45px 10px;
       text-align: left;
       max-width: 360px;
-      background-color: rgba(255, 255, 255, 0.7); }
+      background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.7)); }
       .a-service--lockup .modal--information p,
       .a-service--lockup .modal--information a {
         display: block;
         width: 100%;
         padding: 0 0 0px 0;
         text-decoration: none;
+        font-weight: 500;
         color: #0c0c0c; }
       .a-service--lockup .modal--options {
         margin: 0;
         padding: 0; }
         .a-service--lockup .modal--options ul {
           list-style: disc;
-          list-style-position: outside; }
+          list-style-position: outside;
+          font-weight: 500; }
           .a-service--lockup .modal--options ul li {
             margin-left: -25px; }
-
-.tag {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  font-family: Didact Gothic;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 0.9;
-  color: #ffffff; }
-
-#details {
-  overflow: hidden;
-  font-weight: 300;
-  z-index: 2;
-  top: 100px;
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-
-.leftColumn {
-  width: 50%; }
-
-.rightColumn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%; }
-
-.bgimage {
-  max-height: 100vh;
-  max-width: 100vw;
-  object-fit: cover;
-  overflow: hidden; }
-
-.bgimg {
-  z-index: -1;
-  right: 0;
-  bottom: 0;
-  position: absolute; }
