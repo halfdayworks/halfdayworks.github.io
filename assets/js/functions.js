@@ -103,7 +103,7 @@ $( document ).ready(function() {
 
 
   var targetElement = document.getElementById('viewport');  
-  if (isHome) {
+  if (isHome || isServices) {
   // swipe support for touch devices
     var mc = new Hammer(targetElement);
    
