@@ -1,0 +1,14 @@
+/* SITE BY */
+Name: HALFDAY WORKS, http://www.halfdayworks.com/
+
+/* WEB TEAM */
+Role: Creator
+Name: Aaditya Ghatol
+Site: https://www.facebook.com/aaditya.ghatol
+
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Components: SASS, JS, JQUERY, HAMMERJS
+Software: Sublime Text 2
