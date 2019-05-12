@@ -2,11 +2,27 @@
 
 $( document ).ready(function() {
 
+  var canScroll = true,
+      scrollController = null,
+      
+      isHome = Boolean(window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.href.indexOf("#navigated") > -1),
+      isServices = Boolean(window.location.pathname === '/services/' || window.location.href.indexOf("#serviceId") > -1);
+  
+  
 
   if(window.location.href.indexOf("#navigated") > -1) {
     var url = window.location.href;
         str = url.substring(url.lastIndexOf('#')+1, );
-        
+        curPos =str.substring(10,11), 
+        nextPos =str.substring(12,13),
+        lastItem =str.substring(14,15);
+    updateNavs(nextPos);
+    updateContent(curPos, nextPos, lastItem);
+  }
+  
+  if(window.location.href.indexOf("#serviceId") > -1) {
+    var url = window.location.href;
+        str = url.substring(url.lastIndexOf('#')+1, );
         curPos =str.substring(10,11), 
         nextPos =str.substring(12,13),
         lastItem =str.substring(14,15);
@@ -15,14 +31,8 @@ $( document ).ready(function() {
   }
 
 
-  // DOMMouseScroll included for firefox support
-  var canScroll = true,
-      scrollController = null,
-      isHome = Boolean(window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/services/' || window.location.href.indexOf("#navigated") > -1);
 
-  
-
-  if (isHome) { 
+  if (isHome || isServices) { 
     $('.l-viewport').css('height', '100vh');
     $(this).on('mousewheel DOMMouseScroll', function(e){
       if (!($('.outer-nav').hasClass('is-vis'))) {
@@ -52,7 +62,7 @@ $( document ).ready(function() {
   }
 
 
-  $('.side-nav li, .outer-nav li, .servslider--item').click(function(){
+  $('.side-nav li, .outer-nav li').click(function(){
 
     if (!($(this).hasClass('is-active'))) {
 
@@ -62,8 +72,7 @@ $( document ).ready(function() {
           nextPos = $this.parent().children().index($this),
           lastItem = $(this).parent().children().length - 1;
 
-
-      if ( window.location.pathname == '/' || window.location.pathname == '/index.php'){ 
+      if ( window.location.pathname == '/' || window.location.pathname == '/index.html'){ 
         updateNavs(nextPos);
         updateContent(curPos, nextPos, lastItem);
       } else {
@@ -74,17 +83,16 @@ $( document ).ready(function() {
 
   });
 
+
   $('.cta').click(function(){
 
     var curActive = $('.side-nav').find('.is-active'),
         curPos = $('.side-nav').children().index(curActive),
-        lastItem = 5,   //$('.side-nav').children().length - 1,
+        lastItem = $('.side-nav').children().length - 1,
         nextPos = lastItem;
 
-    //updateNavs(lastItem);
-    //updateContent(curPos, nextPos, lastItem);
-
-    if ( window.location.pathname == '/' || window.location.pathname == '/index.php'){ 
+   
+    if ( window.location.pathname == '/' || window.location.pathname == '/index.html'){ 
       updateNavs(nextPos);
       updateContent(curPos, nextPos, lastItem);
     } else {
@@ -92,6 +100,7 @@ $( document ).ready(function() {
     }
 
   });
+
 
 
   var targetElement = document.getElementById('viewport');  
@@ -154,7 +163,7 @@ $( document ).ready(function() {
 
   // sync side and outer navigations
   function updateNavs(nextPos) {
-
+    //console.log("in updateNavs, nextPos: " + nextPos);
     $('.side-nav, .outer-nav').children().removeClass('is-active');
     $('.side-nav').children().eq(nextPos).addClass('is-active');
     $('.outer-nav').children().eq(nextPos).addClass('is-active');
@@ -163,6 +172,13 @@ $( document ).ready(function() {
 
   // update main content area
   function updateContent(curPos, nextPos, lastItem) {
+    
+    
+    if(isHome) {
+      document.location.hash="navigated/" + curPos + "/" + nextPos + "/" + lastItem;  
+    }
+    
+    
 
     $('.main-content').children().removeClass('section--is-active');
     $('.main-content').children().eq(nextPos).addClass('section--is-active');
@@ -413,7 +429,15 @@ $( document ).ready(function() {
   servSlider();
   servtransitionLabels();
 
+
+
+
+
+
 });
+
+
+  
 
 document.body.onload = function(){
   setTimeout(function() {
